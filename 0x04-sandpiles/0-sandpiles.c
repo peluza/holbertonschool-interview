@@ -1,10 +1,10 @@
 #include "sandpiles.h"
 
 /**
-* print_grid_ - prints the arrays
-* @grid: arrays
-* Return: Nothing.
-*/
+ * print_grid_ - prints the arrays
+ * @grid: arrays
+ * Return: Nothing.
+ */
 
 void print_grid_(int grid[3][3])
 {
@@ -23,11 +23,11 @@ void print_grid_(int grid[3][3])
 }
 
 /**
-* sandpiles_sum - sandpiles sum calculations
-* @grid1: grid1.
-* @grid2: grid2.
-* Return: Nothing.
-*/
+ * sandpiles_sum - sandpiles sum calculations
+ * @grid1: grid1.
+ * @grid2: grid2.
+ * Return: Nothing.
+ */
 
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
@@ -63,13 +63,13 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 }
 
 /**
-* sandpiles - sandpiles calculations
-* @grid3: grid1.
-* @grid1: grid2.
-* @i: interaction number
-* @j: interaction number
-* Return: Nothing.
-*/
+ * sandpiles - sandpiles calculations
+ * @grid3: grid1.
+ * @grid1: grid2.
+ * @i: interaction number
+ * @j: interaction number
+ * Return: Nothing.
+ */
 
 void sandpiles(int grid3[3][3], int grid1[3][3], int i, int j)
 {
