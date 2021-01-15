@@ -1,12 +1,12 @@
 #include "sandpiles.h"
 
 /**
-* print_frid - prints the arrays
+* print_grid - prints the arrays
 * @grid: arrays
 * Return: Nothing.
 */
 
-void print_frid(int grid[3][3])
+void print_grid_(int grid[3][3])
 {
 	int i, j;
 
@@ -45,7 +45,7 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 	if (count < 9)
 	{
 		printf("=\n");
-		print_frid(grid1);
+		print_grid_(grid1);
 		for (i = 0; i < 3; i++)
 			for (j = 0; j < 3; j++)
 				if (grid1[i][j] >= 4)
