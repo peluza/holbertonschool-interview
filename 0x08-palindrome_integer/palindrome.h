@@ -8,4 +8,3 @@ int is_palindrome(unsigned long n);
 
 
 #endif /* PALINDROME_H */
-
