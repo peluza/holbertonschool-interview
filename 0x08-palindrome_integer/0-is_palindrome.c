@@ -22,10 +22,7 @@ int is_palindrome(unsigned long n)
 		numer_reverse = numer_reverse * 10 + tmp_1;
 		tmp_2 /= 10;
 	}
-	/**
-	* printf("%ld is n.  /n", n);
-	* printf("%ld is number_reverse. /n", numer_reverse);
-	*/
+
 	if (n == numer_reverse)
 		return  (1);
 	else
