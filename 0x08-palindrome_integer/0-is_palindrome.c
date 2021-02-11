@@ -19,7 +19,7 @@ int is_palindrome(unsigned long n)
 	while (tmp_2 != 0)
 	{
 		tmp_1 = tmp_2 % 10;
-		numer_reverse = numer_reverse * 10 + tmp_1;
+		numer_reverse = (numer_reverse * 10) + tmp_1;
 		tmp_2 /= 10;
 	}
 
