@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """validUTF-8"""
+
 def validUTF8(data):
     """validate if the characters in the list are utf-8
 
