@@ -11,6 +11,8 @@ def validUTF8(data):
     """
     if type(data) != list:
         return
+    if data == []:
+        return True
     count = 0
     for c in data:
         if count == 0:
