@@ -33,7 +33,7 @@ int slide_line(int *line, size_t size, int direction)
 void slide_left(int *line, size_t size)
 {
 	size_t i, k, p, q = 0;
-	int aux[size];
+	int aux[32];
 
 	for (k = 0; k < size; k++)
 		aux[k] = 0;
@@ -73,7 +73,7 @@ void slide_left(int *line, size_t size)
 void slide_right(int *line, size_t size)
 {
 	size_t q = 0, j;
-	int aux[size], p, i, k;
+	int aux[32], p, i, k;
 
 	for (j = 0; j < size; j++)
 	{
