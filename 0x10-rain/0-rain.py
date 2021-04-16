@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """rain"""
 
+
 def rain(walls):
     """rain
 
@@ -14,7 +15,7 @@ def rain(walls):
         return 0
 
     LenWalls = len(walls)
-    EndWalls = LenWalls -1
+    EndWalls = LenWalls - 1
     TotalWalter = 0
 
     for i in range(1, EndWalls):
@@ -26,8 +27,7 @@ def rain(walls):
         for j in range(start, LenWalls):
             Rigth = max(walls[j], Rigth)
 
-        MinWlater = min(Left, Rigth) -walls[i]
+        MinWlater = min(Left, Rigth) - walls[i]
         TotalWalter = TotalWalter + MinWlater
 
     return TotalWalter
-
