@@ -9,7 +9,7 @@ listint_t *find_listint_loop(listint_t *list)
 {
 	listint_t *list_1, *list_2;
 
-	if(!list)
+	if (!list)
 		return (NULL);
 
 	list_1 = list;
@@ -23,7 +23,7 @@ listint_t *find_listint_loop(listint_t *list)
 		if (list_1 == list_2)
 		{
 			list_1 = list;
-			while( list_1 != list_2)
+			while (list_1 != list_2)
 			{
 				list_1 = list_1->next;
 				list_2 = list_2->next;
