@@ -33,6 +33,7 @@ void merge(int *array, int *L, int *R, size_t size)
 	printf("[Done]: ");
 	print_array(array, size);
 }
+
 /**
  * merge_sort - sorts an array of integers using
  * the Merge sort algorithm
