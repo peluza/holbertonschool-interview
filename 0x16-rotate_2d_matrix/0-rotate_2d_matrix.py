@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """rotate 2d matrix"""
 
+
 def rotate_2d_matrix(matrix):
     """rotate_2d_matrix
 
@@ -12,7 +13,7 @@ def rotate_2d_matrix(matrix):
     len_m = len(matrix)
     for col in range(len_m):
         tmp = []
-        for row in range(len_m-1, -1, -1):
+        for row in range(len_m - 1, -1, -1):
             tmp.append(matrix[row][col])
         new_matrix.append(tmp)
     for i in range(len_m):
