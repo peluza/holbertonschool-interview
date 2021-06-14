@@ -4,6 +4,7 @@
 import requests
 import sys
 
+
 def count_words(subreddit, word_list, kw_cont={}, next_pg=None, reap_kw={}):
     """count_words
 
@@ -21,17 +22,19 @@ def count_words(subreddit, word_list, kw_cont={}, next_pg=None, reap_kw={}):
 
     try:
         if next_pg:
-            subr = requests.get(url + subreddit + hotafter + next_pg, headers=headers)
+            subr = requests.get(
+                url + subreddit + hotafter + next_pg,
+                headers=headers)
         else:
-            subr = requests.get(url + subreddit + hot , headers=headers)
+            subr = requests.get(url + subreddit + hot, headers=headers)
 
         if subr.status_code == 404:
             return
 
         if kw_cont == {}:
             for word in word_list:
-                kw_cont[word] = 0
-                reap_kw[word] = word_list.count(word)
+                kw_cont[word.lower()] = 0
+                reap_kw[word.lower()] = word_list.count(word)
 
         subr_dict = subr.json()
         subr_data = subr_dict['data']
@@ -63,4 +66,3 @@ def count_words(subreddit, word_list, kw_cont={}, next_pg=None, reap_kw={}):
 
     except ValueError:
         print(ValueError)
-
