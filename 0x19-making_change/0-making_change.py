@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Change comes from within"""
 
+
 def makeChange(coins, total):
     """
     Given a pile of coins of different values,
@@ -15,7 +16,6 @@ def makeChange(coins, total):
     """
     if total <= 0:
         return 0
-
 
     new = total + 1
     store = {0: 0}
